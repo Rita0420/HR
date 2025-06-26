@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HR</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css"
         integrity="sha512-fw7f+TcMjTb7bpbLJZlP8g2Y4XcCyFZW8uy8HsRZsH/SwbMw0plKHFHr99DN3l04VsYNwvzicUX/6qurvIxbxw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -96,7 +96,7 @@
             outline: none;
         }
 
-        #short {
+        .short {
             width: 100%;
         }
 
@@ -107,10 +107,11 @@
         }
 
         @media (min-width: 576px) {
-            #short {
+            .short {
                 width: 45%;
             }
         }
+
         .new {
             border: 2px dashed var(--main-green);
             padding: 5px 10px;
@@ -120,7 +121,8 @@
             border-radius: 6px;
             transition: all 0.3s ease;
         }
-        small{
+
+        small {
             font-size: 0.5em;
             text-align: right;
         }
@@ -157,7 +159,7 @@
                             <input type="date" class="form-control" id="birthday">
                         </div>
                         <div class="m-3">
-                            <label for="birthday" class="form-label">血型:</label>
+                            <label for="blood" class="form-label">血型:</label>
                             <select name="blood" id="blood" class="form-control">
                                 <option value="choose">請選擇</option>
                                 <option value="A">A</option>
@@ -167,12 +169,12 @@
                             </select>
                         </div>
                         <div class="m-3">
-                            <label for="name" class="form-label">身高:</label>
-                            <input type="number" class="form-control" id="name">
+                            <label for="height" class="form-label">身高:</label>
+                            <input type="number" class="form-control" id="height">
                         </div>
                         <div class="m-3">
-                            <label for="name" class="form-label">體重:</label>
-                            <input type="number" class="form-control" id="name">
+                            <label for="weight" class="form-label">體重:</label>
+                            <input type="number" class="form-control" id="weight">
                         </div>
                     </div>
                 </div>
@@ -189,50 +191,50 @@
                         <div class="m-3">
                             <label for="gender" class="form-label">性別:</label>
                             <br>
-                            <input type="radio" name="man" id="man">
+                            <input type="radio" name="gender" id="man">
                             <label for="man" class="form-label">男</label>
-                            <input type="radio" name="woman" id="woman">
+                            <input type="radio" name="gender" id="woman">
                             <label for="woman" class="form-label">女</label>
-                            <input type="radio" name="another" id="another">
+                            <input type="radio" name="gender" id="another">
                             <label for="another" class="form-label">其他</label>
                         </div>
                         <div class="m-3">
-                            <label for="gender" class="form-label">婚姻狀態:</label>
+                            <label for="" class="form-label">婚姻狀態:</label>
                             <br>
-                            <input type="radio" name="married" id="married">
+                            <input type="radio" name="marry" id="married">
                             <label for="married" class="form-label">已婚</label>
-                            <input type="radio" name="nomarry" id="nomarry">
+                            <input type="radio" name="marry" id="nomarry">
                             <label for="nomarry" class="form-label">未婚</label>
                         </div>
                         <div class="m-3">
                             <label for="gender" class="form-label">役別:</label>
                             <br>
-                            <input type="radio" name="married" id="married">
-                            <label for="married" class="form-label">已役</label>
-                            <input type="radio" name="nomarry" id="nomarry">
-                            <label for="nomarry" class="form-label">未役</label>
-                            <input type="radio" name="nomarry" id="nomarry">
-                            <label for="nomarry" class="form-label">免役</label>
+                            <input type="radio" name="army" id="army1">
+                            <label for="army1" class="form-label">已役</label>
+                            <input type="radio" name="army" id="army2">
+                            <label for="army2" class="form-label">未役</label>
+                            <input type="radio" name="army" id="army3">
+                            <label for="army3" class="form-label">免役</label>
                         </div>
                         <div class="m-3">
                             <label for="id" class="form-label">持有駕照:</label>
                             <br>
-                            <input type="checkbox" id="id">
-                            <label for="id" class="form-label">無</label>
-                            <input type="checkbox" id="id">
-                            <label for="id" class="form-label">汽車</label>
-                            <input type="checkbox" id="id">
-                            <label for="id" class="form-label">機車</label>
+                            <input type="checkbox" id="no">
+                            <label for="no" class="form-label">無</label>
+                            <input type="checkbox" id="car">
+                            <label for="car" class="form-label">汽車</label>
+                            <input type="checkbox" id="bike">
+                            <label for="bike" class="form-label">機車</label>
                         </div>
                         <div class="m-3">
                             <label for="id" class="form-label">通勤方式:</label>
                             <br>
-                            <input type="checkbox" id="id">
-                            <label for="id" class="form-label">開車</label>
-                            <input type="checkbox" id="id">
-                            <label for="id" class="form-label">騎車</label>
-                            <input type="checkbox" id="id">
-                            <label for="id" class="form-label">宿舍</label>
+                            <input type="checkbox" id="car1">
+                            <label for="car1" class="form-label">開車</label>
+                            <input type="checkbox" id="car2">
+                            <label for="car2" class="form-label">騎車</label>
+                            <input type="checkbox" id="car3">
+                            <label for="car3" class="form-label">宿舍</label>
                         </div>
                     </div>
                 </div>
@@ -241,55 +243,55 @@
 
                     <div class="box">
                         <div class="m-3">
-                            <label for="name" class="form-label">連絡電話:</label>
-                            <input type="number" class="form-control" id="name">
+                            <label for="phone" class="form-label">連絡電話:</label>
+                            <input type="number" class="form-control" id="phone">
                         </div>
                         <div class="m-3">
-                            <label for="name" class="form-label">行動電話:</label>
-                            <input type="number" class="form-control" id="name">
+                            <label for="mobile" class="form-label">行動電話:</label>
+                            <input type="number" class="form-control" id="mobile">
                         </div>
                         <div class="m-3">
-                            <label for="name" class="form-label">電子郵件:</label>
-                            <input type="email" class="form-control" id="name">
+                            <label for="email" class="form-label">電子郵件:</label>
+                            <input type="email" class="form-control" id="email">
                         </div>
                         <div class="m-3">
-                            <label for="name" class="form-label">Line ID:</label>
-                            <input type="text" class="form-control" id="name">
+                            <label for="line" class="form-label">Line ID:</label>
+                            <input type="text" class="form-control" id="line">
                         </div>
                         <div class="m-3">
-                            <label for="name" class="form-label">聯絡地址:</label>
-                            <input type="text" class="form-control" id="name">
+                            <label for="address" class="form-label">聯絡地址:</label>
+                            <input type="text" class="form-control" id="address">
                         </div>
                         <div class="m-3">
-                            <label for="name" class="form-label">戶籍地址:</label>
-                            <input type="text" class="form-control" id="name">
+                            <label for="address1" class="form-label">戶籍地址:</label>
+                            <input type="text" class="form-control" id="address1">
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6">
                     <div class="box">
                         <div class="m-3">
-                            <label for="name" class="form-label">緊急聯絡人:</label>
-                            <input type="text" class="form-control" id="name">
+                            <label for="name1" class="form-label">緊急聯絡人:</label>
+                            <input type="text" class="form-control" id="name1">
                         </div>
                         <div class="m-3">
-                            <label for="name" class="form-label">關係:</label>
-                            <input type="text" class="form-control" id="name">
+                            <label for="name2" class="form-label">關係:</label>
+                            <input type="text" class="form-control" id="name2">
                         </div>
                         <div class="m-3">
-                            <label for="name" class="form-label">緊急聯絡人電話:</label>
-                            <input type="number" class="form-control" id="name">
+                            <label for="name3" class="form-label">緊急聯絡人電話:</label>
+                            <input type="number" class="form-control" id="name3">
                         </div>
                         <div class="m-3 h3 text-center">
                             學歷
                         </div>
                         <div class="m-3">
-                            <label for="name" class="form-label">學校名稱:</label>
-                            <input type="text" class="form-control" id="name">
+                            <label for="school" class="form-label">學校名稱:</label>
+                            <input type="text" class="form-control" id="school">
                         </div>
                         <div class="m-3">
-                            <label for="name" class="form-label">科系:</label>
-                            <input type="text" class="form-control" id="name">
+                            <label for="school1" class="form-label">科系:</label>
+                            <input type="text" class="form-control" id="school1">
                         </div>
                     </div>
                 </div>
@@ -301,17 +303,17 @@
                         </div>
                         <div class="box1">
                             <div class="m-3 work row">
-                                <label for="name" class="form-label col-12 col-sm-2">服務單位:</label>
-                                <input type="text" class="form-control col" id="short">
-                                <label for="name" class="form-label col-12 col-sm-2 ">職稱:</label>
-                                <input type="text" class="form-control col" id="short">
+                                <label for="a" class="form-label col-12 col-sm-2">服務單位:</label>
+                                <input type="text" class="form-control col short" id="a">
+                                <label for="b" class="form-label col-12 col-sm-2 ">職稱:</label>
+                                <input type="text" class="form-control col short" id="b">
 
                             </div>
                             <div class="m-3 work row">
-                                <label for="name" class="form-label col-12 col-sm-2">工作說明:</label>
-                                <input type="text" class="form-control col" id="short">
-                                <label for="name" class="form-label col-12 col-sm-2 ">年資:</label>
-                                <input type="text" class="form-control col" id="short">
+                                <label for="c" class="form-label col-12 col-sm-2">工作說明:</label>
+                                <input type="text" class="form-control col short" id="c">
+                                <label for="d" class="form-label col-12 col-sm-2 ">年資:</label>
+                                <input type="text" class="form-control col short" id="d">
                             </div>
                         </div>
                         <div class="m-3 text-center">
@@ -350,26 +352,26 @@
     <script>
         $(document).ready(function () {
             const button = $('.new');
-            const work=$('.box1');
+            const work = $('.box1');
             button.click(function () {
                 console.log('btn', button);
                 tmp = `
                         <hr>
-                        <div class="m-3 work row">
-                            <label for="name" class="form-label col-12 col-sm-2">服務單位:</label>
-                            <input type="text" class="form-control col" id="short">
-                            <label for="name" class="form-label col-12 col-sm-2 ">職稱:</label>
-                            <input type="text" class="form-control col" id="short">
-                            
-                        </div>
-                        <div class="m-3 work row">
-                           <label for="name" class="form-label col-12 col-sm-2">工作說明:</label>
-                            <input type="text" class="form-control col" id="short">
-                            <label for="name" class="form-label col-12 col-sm-2 ">年資:</label>
-                            <input type="text" class="form-control col" id="short">
-                        </div>
+                       <div class="m-3 work row">
+                                <label for="a" class="form-label col-12 col-sm-2">服務單位:</label>
+                                <input type="text" class="form-control col short" id="a">
+                                <label for="b" class="form-label col-12 col-sm-2 ">職稱:</label>
+                                <input type="text" class="form-control col short" id="b">
+
+                            </div>
+                            <div class="m-3 work row">
+                                <label for="c" class="form-label col-12 col-sm-2">工作說明:</label>
+                                <input type="text" class="form-control col short" id="c">
+                                <label for="d" class="form-label col-12 col-sm-2 ">年資:</label>
+                                <input type="text" class="form-control col short" id="d">
+                            </div>
                 `;
-                        work.append(tmp);
+                work.append(tmp);
 
 
             })
